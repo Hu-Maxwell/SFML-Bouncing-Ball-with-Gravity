@@ -4,7 +4,7 @@
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(800, 600), "Bouncing Ball");
+	sf::RenderWindow window(sf::VideoMode(800, 600), "Bouncing Ball"); 
 	window.setFramerateLimit(60); 
 
 	sf::CircleShape circle;
