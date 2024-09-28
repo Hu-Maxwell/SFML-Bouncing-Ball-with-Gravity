@@ -53,9 +53,10 @@ int main()
 		}
 
 		// sets the color to be red after jump
-		if (timeSinceLastJump < .15 && jumped == true) {
+		if (timeSinceLastJump <= .15 && jumped == true && circle.getFillColor() != sf::Color::Red) {
 			circle.setFillColor(sf::Color::Red);
-		} else {
+		} 
+		else if (timeSinceLastJump >= .15 && circle.getFillColor() != sf::Color::White) {
 			circle.setFillColor(sf::Color::White);
 		}
 
